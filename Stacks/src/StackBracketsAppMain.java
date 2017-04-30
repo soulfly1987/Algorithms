@@ -1,5 +1,6 @@
 public class StackBracketsAppMain {
     public static void main(String[] args) {
+        
         String input = "(a{[b])";
 
         System.out.println("Statement to test: " + input);
