@@ -1,6 +1,5 @@
-Arrays/.idea
-OrderedArray/.idea
-Queues/.idea
-SimpleSort/.idea
-Stacks/.idea
+.idea/
+*.iml
+*/out/
+*/idea/
 
