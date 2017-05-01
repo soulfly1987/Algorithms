@@ -1,6 +1,6 @@
 public class DoubleEndedLinkedList {
-    Node first;
-    Node last;
+    SimpleNode first;
+    SimpleNode last;
 
     public DoubleEndedLinkedList() {
         this.first = null;
@@ -11,8 +11,8 @@ public class DoubleEndedLinkedList {
         return first == null;
     }
 
-    public void insertFirst(int iData, double dData) {
-        Node newNode = new Node(iData, dData);
+    public void insertFirst(int iData) {
+        SimpleNode newNode = new SimpleNode(iData);
         if (isEmpty()) {
             first = newNode;
             last = newNode;
@@ -22,8 +22,8 @@ public class DoubleEndedLinkedList {
         }
     }
 
-    public void insertLast(int iData, double dData) {
-        Node newNode = new Node(iData, dData);
+    public void insertLast(int iData) {
+        SimpleNode newNode = new SimpleNode(iData);
         if (isEmpty()) {
             first = newNode;
             last = newNode;
@@ -33,11 +33,11 @@ public class DoubleEndedLinkedList {
         }
     }
 
-    public Node deleteFirst() {
+    public SimpleNode deleteFirst() {
         if (isEmpty()) {
             return null;
         } else {
-            Node temp = first;
+            SimpleNode temp = first;
             if (first.next == null) {
                 first = null;
                 last = null;
@@ -50,7 +50,7 @@ public class DoubleEndedLinkedList {
     }
 
     public void displayList() {
-        Node current = this.first;
+        SimpleNode current = this.first;
         while (current != null) {
             current.displayNode();
             current = current.next;
