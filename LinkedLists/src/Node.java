@@ -1,7 +1,7 @@
 public class Node {
 
-    private int iData;
-    private double dData;
+    public int iData;
+    public double dData;
     public Node next;
 
     public Node(int iData, double dData) {
