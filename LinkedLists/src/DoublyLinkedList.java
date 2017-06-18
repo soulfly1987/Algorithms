@@ -17,7 +17,7 @@ public class DoublyLinkedList {
         if (isEmpty()) {
             last = node;
         } else {
-            last.previous = node;
+            first.previous = node;
         }
         node.next = first;
         first = node;

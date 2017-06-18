@@ -31,7 +31,7 @@ public class LinkedList {
 
     public Node delete(int key) {
         Node current = first;
-        Node previous;
+        Node previous = first;
 
         while (current.iData != key) {
             if (current.next == null) {
@@ -45,7 +45,7 @@ public class LinkedList {
         if (current == first) {
             first = first.next;
         } else {
-            previous = current.next;
+            previous.next = current.next;
         }
         return current;
     }

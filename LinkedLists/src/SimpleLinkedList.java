@@ -31,7 +31,7 @@ public class SimpleLinkedList {
 
     public SimpleNode delete(int key) {
         SimpleNode current = first;
-        SimpleNode previous;
+        SimpleNode previous = first;
 
         while (current.iData != key) {
             if (current.next == null) {
@@ -45,7 +45,7 @@ public class SimpleLinkedList {
         if (current == first) {
             first = first.next;
         } else {
-            previous = current.next;
+            previous.next = current.next;
         }
         return current;
     }

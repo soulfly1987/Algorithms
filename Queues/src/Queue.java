@@ -1,4 +1,6 @@
+
 public class Queue {
+
 
     private int[] queArray;
     private int maxSize;

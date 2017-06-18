@@ -46,7 +46,7 @@ public class MainApp {
 
             case "INSERTION": {
                 //Insertion sort
-                InsertionSort insertionSort = new InsertionSort(5);
+                InsertionSort3 insertionSort = new InsertionSort3(5);
 
                 insertionSort.insert(22);
                 insertionSort.insert(4);

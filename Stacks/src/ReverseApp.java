@@ -15,8 +15,8 @@ public class ReverseApp {
         output = "";
     }
 
-    public String doReverse(){
-        while(!stack.isEmpty()){
+    public String doReverse() {
+        while (!stack.isEmpty()) {
             output += stack.pop();
         }
         return output;
