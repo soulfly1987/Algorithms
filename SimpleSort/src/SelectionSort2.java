@@ -18,9 +18,9 @@ public class SelectionSort2 {
             for (int in = out + 1; in < noElem; in++) {
                 if (arr[in] < min) {
                     min = arr[in];
-                    swap(out, in);
                 }
             }
+            swap(out, min);
         }
     }
 

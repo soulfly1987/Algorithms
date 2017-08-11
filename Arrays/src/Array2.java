@@ -1,4 +1,3 @@
-
 public class Array2 {
 
     int[] arr;
@@ -40,8 +39,8 @@ public class Array2 {
         }
     }
 
-    public void display(){
-        for (int e: arr) {
+    public void display() {
+        for (int e : arr) {
             System.out.println(e);
         }
     }

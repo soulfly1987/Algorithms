@@ -20,9 +20,9 @@ public class SelectionSort {
             for (int in = out + 1; in < noElem; in++) {
                 if (arr[in] < min) {
                     min = arr[in];
-                    swap(in, out);
                 }
             }
+            swap(min, out);
         }
     }
 

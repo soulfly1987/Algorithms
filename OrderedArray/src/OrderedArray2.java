@@ -31,7 +31,6 @@ public class OrderedArray2 {
             if (last < first)
                 return false;
         }
-
     }
 
     public void insert(int key) {

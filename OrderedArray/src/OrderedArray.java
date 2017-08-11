@@ -1,4 +1,3 @@
-
 public class OrderedArray {
     private int[] arr;
     private int nElem;
@@ -11,17 +10,17 @@ public class OrderedArray {
     public boolean find(int searchKey) {
         int lowerBound = 0;
         int upperBound = nElem;
-        int middleElem;
+        int middle;
 
         while (true) {
-            middleElem = (lowerBound + upperBound) / 2;
-            if (middleElem == searchKey)
+            middle = (lowerBound + upperBound) / 2;
+            if (arr[middle] == searchKey)
                 return true;
-            else if (searchKey > middleElem)
-                lowerBound = middleElem + 1;
-            else if (searchKey < middleElem)
-                upperBound = middleElem - 1;
-            else if (upperBound < middleElem)
+            else if (searchKey > arr[middle])
+                lowerBound = middle + 1;
+            else if (searchKey < arr[middle])
+                upperBound = middle - 1;
+            else if (upperBound < middle)
                 return false;
         }
     }
@@ -42,21 +41,20 @@ public class OrderedArray {
         }
     }
 
-    public boolean delete(int key){
+    public boolean delete(int key) {
         int j;
-        for(j=0; j<nElem; j++)
-            if(arr[j]==key)
+        for (j = 0; j < nElem; j++)
+            if (arr[j] == key)
                 break;
 
-        if(j==nElem)
+        if (j == nElem)
             return false;
-        else{
-            for(int k=j;k<nElem;k++)
-                arr[k] = arr[k+1];
+        else {
+            for (int k = j; k < nElem; k++)
+                arr[k] = arr[k + 1];
             nElem--;
             return true;
         }
-
     }
 
     public void display() {

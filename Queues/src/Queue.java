@@ -1,6 +1,4 @@
-
 public class Queue {
-
 
     private int[] queArray;
     private int maxSize;
@@ -40,11 +38,11 @@ public class Queue {
         return noElem == 0;
     }
 
-    public boolean isFull(){
+    public boolean isFull() {
         return noElem == maxSize;
     }
 
-    public int size(){
+    public int size() {
         return noElem;
     }
 }
